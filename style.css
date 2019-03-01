@@ -46,6 +46,7 @@ h1{
 span{
   color: red;
   padding: 10px;
+  font-weight: bold;
 }
 label{
   color: #0000CD;
