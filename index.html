@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./style.css">
+  <title>Form</title>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Registration</h1>
+  <div class="container">
+
+    <form>
+      <div class="row">
+        <label for="firsName">First name:</label>
+        <input type="text" name="firsName" placeholder="First name"  id="firsName" data-rule="text required ">
+        <span class="help"></span>
+      </div>
+
+     <div class="row">
+       <label for="lastName">Last name:</label>
+       <input type="text" name="lastName" placeholder="Last name" id="lastName" data-rule="text required">
+       <span class="help"></span>
+     </div>
+
+
+<div class="row">
+  <label for="start" id="labelShow">Birthday(click me):</label>
+<input type="date" id="start" name="trip-start" class="hide"
+       value="2019-01-03"
+       min="1900-01-01" max="2019-01-03" data-rule="start">
+       <span class="help"></span>
+</div>
+
+
+     <div class="row">
+       <div class="center">
+       <label for="male">Male</label>
+       <input type="radio" name="state" id="male" data-rule="required" value="1" data-rule="checked" checked>
+       <span class="help"></span>
+
+       <label for="female">Female</label>
+       <input type="radio" name="state" id="female" data-rule="required" value="2" data-rule="checked">
+       <span id="help_state"></span>
+       </div>
+     </div>
+
+
+     <div class="row">
+       <label for="country">Country: </label>
+       <select name="city" id="country" data-rule="required">
+        <option selected disabled>select your country</option>
+        <option value="1">Ukraine</option>
+        <option value="2">Polish</option>
+       </select>
+       <span class="help"></span>
+     </div>
+
+     <div class="row">
+       <label for="email">Email:</label>
+       <input type="text" name="email" placeholder="Email" id="email" data-rule="required email">
+       <span class="help"></span>
+     </div>
+
+     <div class="row">
+       <label for="address">Address:</label>
+       <input type="text" name="address" placeholder="Address" id="address" data-rule="required text">
+       <span class="help"></span>
+     </div>
+
+     <div class="row">
+       <label for="notes">Notes</label>
+       <textarea name="message" id="notes" data-rule="max"></textarea>
+       <span class="help"></span>
+     </div>
+<div class="center">
+  <button >Submit</button>
+</div>
+
+    </form>
+  </div>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
